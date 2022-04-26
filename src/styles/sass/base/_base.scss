@@ -1,0 +1,58 @@
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+    // font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  
+    @media (max-width: $bp-sm) {
+      font-size: 50%;
+    }
+  
+    
+    overflow-x: hidden;
+  }
+
+  
+body {
+    font-family: var(--primaryFont), sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #242424;
+    font-size: 1.6rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  
+    &:hover {
+      color: inherit;
+    }
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  p {
+    font-size: inherit;
+    line-height: 1.5;
+  }
+  

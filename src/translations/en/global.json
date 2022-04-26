@@ -1,0 +1,41 @@
+{
+  "translation": {
+    "about": {
+      "heading": "About me",
+      "1.1": "Hello, my name is Javier, I live in Seville and I am a web developer with studies in Web Application Development and Multiplatform Application Development. I specialize in ",
+      "1.2": ", but I have also used backend technologies and software development in Java.",
+      "2": "I am a Law graduate, but several years ago I changed my career to dedicate myself exclusively to web development.",
+      "3": "If you are interested in working with me, you can contact me by email, phone or through any of my social networks.",
+      "languages":{
+        "es": "Spanish",
+        "en": "English",
+        "it": "Italian",
+        "fr": "French",
+        "native": "Native",
+        "B1": "B1",
+        "B2": "B2"
+      }
+    },
+    "skills": {
+      "heading": "Skills"
+    },
+    "portfolio": {
+      "heading": "Portfolio"
+    },
+    "common": {
+      "view": "View"
+    },
+    "contact":{
+      "heading": "Contact",
+      "form": {
+        "name": "Name",
+        "email":"Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send",
+        "success": "Message sent. I will reply as soon as possible"
+      }
+    }
+
+  }
+}

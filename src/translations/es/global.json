@@ -1,0 +1,41 @@
+{
+  "translation": {
+    "about": {
+      "heading": "Acerca de mí",
+      "1.1": "Hola, me llamo Javier, vivo en Sevilla y soy un desarrollador web con estudios en Desarrollo de Aplicaciones Web y Multiplataforma. Me especializo en ",
+      "1.2": ", pero también he utilizado tecnologías de Backend y de desarrollo de software en Java.",
+      "2": "Mis estudios universitarios son de Derecho, pero desde hace varios años cambié de carrera para dedicarme exclusivamente al desarrollo.",
+      "3": "Si estás interesado en trabajar conmigo, puedes contactarme por correo electrónico, teléfono o por cualquiera de mis redes sociales.",
+      "languages":{
+        "es": "Español",
+        "en": "Inglés",
+        "it": "Italiano",
+        "fr": "Francés",
+        "native": "Nativo",
+        "B1": "B1",
+        "B2": "B2"
+      }
+    },
+    "skills": {
+      "heading": "Habilidades"
+    },
+    "portfolio": {
+      "heading": "Portafolio"
+    },
+    "common": {
+      "view": "Ver"
+    },
+    "contact":{
+      "heading": "Contacto",
+      "form": {
+        "name": "Nombre",
+        "email":"Correo electrónico",
+        "subject": "Asunto",
+        "message": "Mensaje",
+        "send": "Enviar",
+        "success": "Mensaje eviado. Contestaré a la brevedad."
+      }
+    }
+
+  }
+}
