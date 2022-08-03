@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import React from "react";
 import { heightWithoutToolBar } from "../../styles/styleStrings";
 import { useTranslation } from "react-i18next";
@@ -40,15 +40,35 @@ export const About = () => {
           sx={{
             display: "flex",
             margin: 0,
-            padding: { xs: "3rem 3rem", md: "3rem 6rem" },
+            padding: { xs: "2rem 2rem", sm: "0", md: "2rem 2rem" },
             justifyContent: "center",
             alignItems: "center",
-            gap: { xs: "3rem", md: "4rem" },
-            flexDirection: { xs: "column", md: "row" },
+            gap: { xs: "2rem", md: "2rem" },
+            flexDirection: { xs: "column", sm: "row" },
           }}
         >
-          <Box sx={{ minWidth: "15rem", height: "15rem", overflow: "hidden", borderRadius: "50%" }}>
-            <Box component="img" src={"assets/me.png"} sx={{ height: "100%", width: "100%", objectFit: "cover" }} />
+          <Box>
+            <Box
+              sx={{
+                height: "15rem",
+                width: { xs: "15rem", sm: "12rem", md: "15rem" },
+                overflow: "hidden",
+                borderRadius: "50%",
+                marginBottom: "1rem",
+              }}
+            >
+              <Box
+                component="img"
+                src={"assets/me.png"}
+                sx={{ height: "100%", width: "100%", objectFit: "cover" }}
+              />
+            </Box>
+
+            <Box sx={{ display: "flex", justifyContent: "center" }}>
+              <Box component="a" href="./assets/files/JGG_CV.pdf" download>
+                <Button variant="contained">Download my CV</Button>
+              </Box>
+            </Box>
           </Box>
           <Box>
             <Box>
@@ -58,7 +78,14 @@ export const About = () => {
                   {t("about.1.1")}
                 </Typography>
 
-                <Typography component={"span"} sx={{ color: "primary.main", fontSize: "inherit", fontWeight: "bold" }}>
+                <Typography
+                  component={"span"}
+                  sx={{
+                    color: "primary.main",
+                    fontSize: "inherit",
+                    fontWeight: "bold",
+                  }}
+                >
                   React
                 </Typography>
                 <Typography sx={{ fontSize: "inherit" }} component="span">
@@ -71,15 +98,32 @@ export const About = () => {
               </Typography>
               , pero también he utilizado tecnologías de Backend y de desarrollo de software en Java. */}
               </Typography>
-              <Typography sx={{ fontSize: "1.25rem", mb: "1rem" }}>{t("about.2")}</Typography>
-              <Typography sx={{ fontSize: "1.25rem", mb: "1rem" }}>{t("about.3")}</Typography>{" "}
-            </Box>
-            <Box>
-              <Typography component={"h3"} variant={"h5"} sx={{ mb: "1rem" }}>
-                Languages
+              <Typography sx={{ fontSize: "1.25rem", mb: "1rem" }}>
+                {t("about.2")}
               </Typography>
+              <Typography sx={{ fontSize: "1.25rem", mb: "1rem" }}>
+                {t("about.3")}
+              </Typography>{" "}
+            </Box>
+
+            <Typography component={"h3"} variant={"h5"} sx={{ mb: "1rem" }}>
+              Languages
+            </Typography>
+            <Box
+              sx={{
+                display: "grid",
+                mb: "1rem",
+                gridTemplateColumns: {
+                  xs: "repeat(2, 1fr)",
+                  sm: "repeat(1, 1fr)",
+                },
+              }}
+            >
               {languages.map((lang) => (
-                <Box key={lang.id} sx={{ display: "flex", gap: "2rem", mb: "1rem" }}>
+                <Box
+                  key={lang.id}
+                  sx={{ display: "flex", gap: "2rem", mb: "1rem" }}
+                >
                   <Box
                     component="img"
                     src={`./assets/flags/${lang.id}.png`}

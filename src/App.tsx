@@ -12,7 +12,11 @@ import { Topbar } from "./components/topbar/Topbar";
 import { Works } from "./components/works/Works";
 import { heightWithoutToolBar } from "./styles/styleStrings";
 import { About } from "./components/about/About";
-import { I18nextProvider, initReactI18next, useTranslation } from "react-i18next";
+import {
+  I18nextProvider,
+  initReactI18next,
+  useTranslation,
+} from "react-i18next";
 
 import i18n from "i18next";
 
@@ -37,7 +41,15 @@ i18n
       escapeValue: false, // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
     },
     detection: {
-      order: ["navigator", "localStorage", "htmlTag", "cookie", "sessionStorage", "path", "subdomain"],
+      order: [
+        "navigator",
+        "localStorage",
+        "htmlTag",
+        "cookie",
+        "sessionStorage",
+        "path",
+        "subdomain",
+      ],
     },
     react: { useSuspense: false },
   });
@@ -54,8 +66,9 @@ const theme = createTheme({
   typography: {
     fontFamily: "Lato",
     h1: {
-      fontSize: "2.9rem",
+      // fontSize: "2.9rem",
     },
+    htmlFontSize: 10,
   },
 });
 
