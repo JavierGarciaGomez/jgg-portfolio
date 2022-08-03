@@ -21,6 +21,8 @@ const skills = [
   { id: "sass", label: "Sass" },
   { id: "java", label: "Java" },
   { id: "hibernate", label: "Hibernate" },
+  { id: "cypress", label: "Cypress" },
+  { id: "angular", label: "Angular" },
 ];
 
 export const Skills = () => {
@@ -34,7 +36,6 @@ export const Skills = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-
         ...heightWithoutToolBar,
         scrollSnapAlign: "start",
         display: "flex",
@@ -44,7 +45,7 @@ export const Skills = () => {
         filter: "brightness(100%)",
       }}
     >
-      <Container sx={{ padding: "5rem 0" }}>
+      <Container sx={{ padding: "8rem 0" }}>
         <Box sx={{ display: "flex", justifyContent: "center", mb: "3rem" }}>
           <Typography variant="h2" component="h2" color={"white"}>
             {t("skills.heading")}
@@ -54,8 +55,7 @@ export const Skills = () => {
           sx={{
             display: "grid",
             gridTemplateColumns: { xs: "repeat(3, 1fr)", sm: "repeat(4, 1fr)" },
-
-            gap: "1.5rem",
+            gap: "2rem",
             justifyItems: "center",
           }}
         >

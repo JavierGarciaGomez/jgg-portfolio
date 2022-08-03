@@ -7,17 +7,19 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { SocialMedia } from "../socialMedia/SocialMedia";
-import { Facebook, LinkedIn } from "@mui/icons-material";
 import { LanguageSelector } from "../languageSelector/LanguageSelector";
 
 const pages = ["Products", "Pricing", "Blog"];
 
 export const ResponsiveAppBar = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
+    null
+  );
+  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
+    null
+  );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     console.log("opening");
@@ -31,7 +33,10 @@ export const ResponsiveAppBar = () => {
   return (
     <AppBar position="sticky">
       <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Toolbar
+          disableGutters
+          sx={{ display: "flex", justifyContent: "space-between" }}
+        >
           <Box sx={{ display: "flex" }}>
             <IconButton
               size="large"
@@ -68,7 +73,12 @@ export const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <Typography variant="h6" noWrap component="div" sx={{ display: "flex", flexGrow: 1, padding: "0 2rem" }}>
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ display: "flex", flexGrow: 1, padding: "0 2rem" }}
+          >
             JG
           </Typography>
 

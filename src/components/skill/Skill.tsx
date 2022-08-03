@@ -14,7 +14,7 @@ export const Skill = ({ skill }: Props) => {
       boxShadow={20}
       borderRadius={4}
       sx={{
-        width: { xs: "8.5rem", sm: "7.5rem" },
+        width: "12rem",
         backgroundColor: "primary.dark",
         padding: "1rem",
         boxShadow: "0 0 10px hsl(0deg 0% 100% / 50%)",
@@ -32,12 +32,29 @@ export const Skill = ({ skill }: Props) => {
         // backgroundColor: theme.palette.primary.dark,
       }}
     >
-      <Box sx={{ width: "80%", flex: 1, display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <Box component="img" src={`./assets/skills/${id}.png`} sx={{ maxHeight: "8rem" }} />
+      <Box
+        sx={{
+          width: "80%",
+          flex: 1,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Box
+          component="img"
+          src={`./assets/skills/${id}.png`}
+          sx={{ maxHeight: "5rem" }}
+        />
       </Box>
 
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Typography fontSize={18} color="white" fontWeight={600} sx={{ textAlign: "center" }}>
+        <Typography
+          fontSize={18}
+          color="white"
+          fontWeight={600}
+          sx={{ textAlign: "center" }}
+        >
           {label}
         </Typography>
       </Box>
