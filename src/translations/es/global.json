@@ -35,7 +35,16 @@
         "send": "Enviar",
         "success": "Mensaje eviado. Contestaré a la brevedad."
       }
+    },    "projects":{
+      "hvpWeb":{
+        "desc": "Sitio web semiestático del Hospital Veterinario Peninsular, una empresa mexicana con sede en la ciudad de Mérida dedicada a la prestación de servicios veterinarios. El sitio web cuenta con algunos elementos cargados desde una API, pero en su mayoría es estático."
+      },
+      "hvpDashboard":{
+        "desc": "Aplicación web interna del Hospital Veterinario Peninsular, entre sus funciones principales permite el manejo de algunos aspectos relacionados con los recursos humanos, el control de limpieza de los locales, búsqueda y registro de cédulas fiscales, control de actividades del personal administrativo, adicionalmente permite el registro de clientes para tramitar pedigrís y realizar otros trámites de la Federación Canófila Mexicana. Fue utilizado como proyecto final para el FP de Desarrollo de Aplicaciones Web."
+      },
+      "hvpDesktopApp":{
+        "desc": "Aplicación de escritorio del Hospital Veterinario Peninsular, entre sus funciones principales se encuentra el registro del personal, la calendarización de jornadas de trabajo, la agenda de citas, el registro de entradas y salidas, el manejo de incidentes, entre otros. Fue utilizada como proyecto final para el FP de Desarrollo de Aplicaciones Multiplataforma."
+      }
     }
-
   }
 }
