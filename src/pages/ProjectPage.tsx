@@ -7,8 +7,18 @@ import Typography from "@mui/material/Typography";
 import PageviewIcon from "@mui/icons-material/Pageview";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { SkillIcon } from "../components/skillIcon/SkillIcon";
+import { useTranslation } from "react-i18next";
+import { projectData } from "../data/data";
+import { useParams } from "react-router-dom";
 
 export const ProjectPage = () => {
+  const { projectId } = useParams();
+
+  // TODO get this
+
+  const project = projectData.find((element) => element.id === projectId);
+
+  const { t } = useTranslation();
   /* //TODO LIST:
         recibir el parámetro del proyecto
         crear la data
@@ -39,7 +49,7 @@ export const ProjectPage = () => {
           }}
         >
           <Typography variant="h2" component="h2">
-            HVP Web Project
+            {project?.title}
           </Typography>
         </Box>
         {/* img and buttons */}
@@ -48,11 +58,9 @@ export const ProjectPage = () => {
             display: "flex",
             gap: "6rem",
             justifyContent: "center",
-            // alignContent: "center",
-            // alignItems: "center",
+            alignItems: { xs: "center", sm: "stretch" },
             flexDirection: { xs: "column", sm: "row" },
             marginBottom: "5rem",
-            // maxHeight: "30vh",
           }}
         >
           {/* LEFT: IMG */}
@@ -60,8 +68,9 @@ export const ProjectPage = () => {
             boxShadow={20}
             sx={{
               //   maxHeight: "30vh",
-              width: "50rem",
-              maxHeight: "50rem",
+
+              width: { xs: "30rem", sm: "50rem" },
+              height: { xs: "30rem", sm: "50rem" },
               //   width: { xs: "15rem", sm: "12rem", md: "15rem" },
               overflow: "hidden",
               borderRadius: "2%",
@@ -69,7 +78,7 @@ export const ProjectPage = () => {
           >
             <Box
               component="img"
-              src={`/assets/portfolio/${"hvpWeb"}.png`}
+              src={`/assets/portfolio/${project?.id}.png`}
               sx={{ height: "100%", width: "100%" }}
             />
           </Box>
@@ -78,10 +87,11 @@ export const ProjectPage = () => {
           <Box
             sx={{
               display: "flex",
-              flexDirection: { xs: "row", sm: "column" },
+              flexDirection: "column",
               justifyContent: "space-evenly",
               alignContent: "center",
               alignItems: "space-between",
+              gap: "3rem",
             }}
           >
             {/* Technologies */}
@@ -97,18 +107,9 @@ export const ProjectPage = () => {
                   justifyItems: "center",
                 }}
               >
-                <SkillIcon
-                  skill={{
-                    id: "react",
-                    label: "React",
-                  }}
-                ></SkillIcon>
-                <SkillIcon
-                  skill={{
-                    id: "angular",
-                    label: "Angular",
-                  }}
-                ></SkillIcon>
+                {project?.technologies.map((element) => (
+                  <SkillIcon key={element.id} skill={element}></SkillIcon>
+                ))}
               </Box>
             </Box>
             {/* Buttons */}
@@ -116,6 +117,7 @@ export const ProjectPage = () => {
               <Typography variant="h5" component="h3" mb="1rem">
                 Conozca más
               </Typography>
+
               <Box
                 sx={{
                   display: "flex",
@@ -123,15 +125,18 @@ export const ProjectPage = () => {
                   gap: "1rem",
                 }}
               >
-                <Button variant="contained" startIcon={<PageviewIcon />}>
-                  Website
-                </Button>
-                <Button variant="contained" startIcon={<GitHubIcon />}>
-                  Github
-                </Button>
-                <Button variant="contained" startIcon={<YouTubeIcon />}>
-                  Youtube
-                </Button>
+                {project?.buttons.map((element) => (
+                  <Box component={"a"} href={element.url}>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      fullWidth={true}
+                      startIcon={<element.component />}
+                    >
+                      {element.type}
+                    </Button>
+                  </Box>
+                ))}
               </Box>
             </Box>
           </Box>
@@ -148,12 +153,7 @@ export const ProjectPage = () => {
           <Typography variant="h3" component="h3" mb="2rem">
             Descripción
           </Typography>
-          <Typography>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            quo impedit perspiciatis maiores temporibus commodi tempore? Aperiam
-            itaque alias laboriosam. Minus veritatis voluptates dignissimos eum
-            repellendus numquam in, consequatur nesciunt?
-          </Typography>
+          <Typography>{t(`projects.${project?.id}.desc`)}</Typography>
         </Box>
 
         <Box

@@ -1,3 +1,4 @@
+
 {
   "translation": {
     "about": {
@@ -34,6 +35,11 @@
         "message": "Message",
         "send": "Send",
         "success": "Message sent. I will reply as soon as possible"
+      }
+    },
+    "projects":{
+      "hvpWeb":{
+        "desc": "This is the description"
       }
     }
 

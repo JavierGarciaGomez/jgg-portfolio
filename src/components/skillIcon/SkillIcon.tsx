@@ -1,19 +1,20 @@
 import React from "react";
 import { Box } from "@mui/material";
 import { motion } from "framer-motion";
+import { ISkill } from "../../interfaces/interfaces";
 
 type Props = {
-  skill: { id: string; label: string };
+  skill: ISkill;
 };
 
 export const SkillIcon = ({ skill }: Props) => {
-  const { id, label } = skill;
+  const { id } = skill;
   return (
     <Box
       boxShadow={10}
       borderRadius={50}
       sx={{
-        backgroundColor: "primary.light",
+        backgroundColor: "white",
         width: "6rem",
         height: "6rem",
         padding: "1rem",
@@ -36,7 +37,7 @@ export const SkillIcon = ({ skill }: Props) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          width: "66%",
+          width: "100%",
         }}
       >
         <Box

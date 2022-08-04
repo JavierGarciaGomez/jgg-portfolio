@@ -3,27 +3,7 @@ import { Box, Container, Typography } from "@mui/material";
 import { heightWithoutToolBar } from "../../styles/styleStrings";
 import { useTranslation } from "react-i18next";
 import { Skill } from "../skill/Skill";
-
-const skills = [
-  { id: "react", label: "React" },
-  { id: "html", label: "HTML" },
-  { id: "css", label: "CSS" },
-  { id: "javaScript", label: "JavaScript" },
-  { id: "redux", label: "Redux" },
-  { id: "materialui", label: "MUI" },
-  { id: "typeScript", label: "TypeScript" },
-  { id: "nodejs", label: "Node.js" },
-  { id: "express", label: "Express" },
-  { id: "mongoDB", label: "MongoDB" },
-  { id: "mysql", label: "MySql" },
-  { id: "git", label: "Git" },
-  { id: "bootstrap", label: "Bootstrap" },
-  { id: "sass", label: "Sass" },
-  { id: "java", label: "Java" },
-  { id: "hibernate", label: "Hibernate" },
-  { id: "cypress", label: "Cypress" },
-  { id: "angular", label: "Angular" },
-];
+import { skills } from "../../data/data";
 
 export const Skills = () => {
   const { t } = useTranslation();
