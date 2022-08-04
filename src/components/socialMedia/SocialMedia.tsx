@@ -8,11 +8,19 @@ import { yellow } from "@mui/material/colors";
 import { lightBgColor } from "../../styles/styleStrings";
 
 const icons = [
-  { id: "linkedin", icon: LinkedIn, link: "https://www.linkedin.com/in/javier-garcia-gomez/" },
+  {
+    id: "linkedin",
+    icon: LinkedIn,
+    link: "https://www.linkedin.com/in/javier-garcia-gomez/",
+  },
   { id: "email", icon: Email, link: "mailto:javieron.garcia@gmail.com" },
   { id: "phone", icon: Phone, link: "tel:+34635026146" },
   { id: "github", icon: GitHub, link: "https://github.com/JavierGarciaGomez" },
-  { id: "youtube", icon: YouTube, link: "https://www.youtube.com/channel/UCRhC_IQiiDC-llhVnXZiZeA" },
+  {
+    id: "youtube",
+    icon: YouTube,
+    link: "https://www.youtube.com/channel/UCRhC_IQiiDC-llhVnXZiZeA",
+  },
 ];
 
 type lang = "es" | "en";
@@ -45,7 +53,7 @@ export const SocialMedia = () => {
             }}
             className="link"
           >
-            <Icon sx={{ fontSize: "1.6rem" }} />
+            <Icon />
           </motion.a>
         );
       })}

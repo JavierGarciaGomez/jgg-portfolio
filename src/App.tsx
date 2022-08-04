@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
-import { ResponsiveAppBar } from "./components/Appbar/Appbar";
+import { Appbar } from "./components/Appbar/Appbar";
 import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
 import global_es from "./translations/es/global.json";
@@ -37,8 +37,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Box className="app">
-        <ResponsiveAppBar />
-
+        <Appbar />
         <AppRouter />
       </Box>
     </ThemeProvider>

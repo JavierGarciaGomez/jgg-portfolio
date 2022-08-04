@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Box } from "@mui/material";
 import { heightWithoutToolBar } from "../styles/styleStrings";
 import { Hero } from "../components/hero/Hero";

@@ -13,7 +13,7 @@ import { LanguageSelector } from "../languageSelector/LanguageSelector";
 
 const pages = ["Products", "Pricing", "Blog"];
 
-export const ResponsiveAppBar = () => {
+export const Appbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -22,7 +22,7 @@ export const ResponsiveAppBar = () => {
   );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    console.log("opening");
+    console.log("opening", event.currentTarget);
     setAnchorElNav(event.currentTarget);
   };
 
