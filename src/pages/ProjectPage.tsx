@@ -6,6 +6,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import PageviewIcon from "@mui/icons-material/Pageview";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { SkillIcon } from "../components/skillIcon/SkillIcon";
 
 export const ProjectPage = () => {
   /* //TODO LIST:
@@ -21,6 +22,7 @@ export const ProjectPage = () => {
       sx={{
         width: "100%",
         ...minHeightWithoutToolBar,
+        paddingTop: "6rem",
         backgroundColor: "secondary.main",
         display: "flex",
         justifyContent: "center",
@@ -33,7 +35,7 @@ export const ProjectPage = () => {
           sx={{
             display: "flex",
             justifyContent: "center",
-            marginBottom: "3rem",
+            marginBottom: "5rem",
           }}
         >
           <Typography variant="h2" component="h2">
@@ -46,10 +48,10 @@ export const ProjectPage = () => {
             display: "flex",
             gap: "6rem",
             justifyContent: "center",
-            alignContent: "center",
-            alignItems: "center",
+            // alignContent: "center",
+            // alignItems: "center",
             flexDirection: { xs: "column", sm: "row" },
-
+            marginBottom: "5rem",
             // maxHeight: "30vh",
           }}
         >
@@ -63,7 +65,6 @@ export const ProjectPage = () => {
               //   width: { xs: "15rem", sm: "12rem", md: "15rem" },
               overflow: "hidden",
               borderRadius: "2%",
-              marginBottom: "1rem",
             }}
           >
             <Box
@@ -73,109 +74,99 @@ export const ProjectPage = () => {
             />
           </Box>
 
+          {/* RIGHT */}
           <Box
             sx={{
               display: "flex",
               flexDirection: { xs: "row", sm: "column" },
-              justifyContent: "center",
+              justifyContent: "space-evenly",
               alignContent: "center",
-              gap: "6rem",
+              alignItems: "space-between",
             }}
           >
-            <Button variant="contained" startIcon={<PageviewIcon />}>
-              Website
-            </Button>
-            <Button variant="contained" startIcon={<GitHubIcon />}>
-              Github
-            </Button>
-            <Button variant="contained" startIcon={<YouTubeIcon />}>
-              Youtube
-            </Button>
+            {/* Technologies */}
+            <Box>
+              <Typography variant="h5" component="h3" mb="1rem">
+                Principales tecnologías
+              </Typography>
+              <Box
+                sx={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(3, 1fr)",
+                  gap: "1rem",
+                  justifyItems: "center",
+                }}
+              >
+                <SkillIcon
+                  skill={{
+                    id: "react",
+                    label: "React",
+                  }}
+                ></SkillIcon>
+                <SkillIcon
+                  skill={{
+                    id: "angular",
+                    label: "Angular",
+                  }}
+                ></SkillIcon>
+              </Box>
+            </Box>
+            {/* Buttons */}
+            <Box>
+              <Typography variant="h5" component="h3" mb="1rem">
+                Conozca más
+              </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "1rem",
+                }}
+              >
+                <Button variant="contained" startIcon={<PageviewIcon />}>
+                  Website
+                </Button>
+                <Button variant="contained" startIcon={<GitHubIcon />}>
+                  Github
+                </Button>
+                <Button variant="contained" startIcon={<YouTubeIcon />}>
+                  Youtube
+                </Button>
+              </Box>
+            </Box>
           </Box>
+        </Box>
+
+        {/* Description */}
+        <Box
+          sx={{
+            maxWidth: "80%",
+            margin: "0 auto",
+            marginBottom: "5rem",
+          }}
+        >
+          <Typography variant="h3" component="h3" mb="2rem">
+            Descripción
+          </Typography>
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            quo impedit perspiciatis maiores temporibus commodi tempore? Aperiam
+            itaque alias laboriosam. Minus veritatis voluptates dignissimos eum
+            repellendus numquam in, consequatur nesciunt?
+          </Typography>
         </Box>
 
         <Box
           sx={{
             display: "flex",
-            margin: 0,
-            padding: { xs: "2rem 2rem", sm: "0", md: "2rem 2rem" },
-            justifyContent: "center",
-            alignItems: "center",
-            gap: { xs: "2rem", md: "2rem" },
-            flexDirection: { xs: "column", sm: "row" },
+            justifyContent: "end",
+            marginRight: "10rem",
+            marginBottom: "5rem",
           }}
         >
-          <Box>
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                height: "15rem",
-                width: { xs: "15rem", sm: "12rem", md: "15rem" },
-                overflow: "hidden",
-                borderRadius: "50%",
-                marginBottom: "1rem",
-              }}
-            >
-              <Box
-                component="img"
-                src={"assets/me.png"}
-                sx={{ height: "100%", width: "100%", objectFit: "cover" }}
-              />
-            </Box>
-
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <Box component="a" href="./assets/files/JGG_CV.pdf" download>
-                <Button variant="contained">Download my CV</Button>
-              </Box>
-            </Box>
-          </Box>
-          <Box>
-            <Box>
-              <Typography sx={{ fontSize: "1.25rem", mb: "1rem" }}>
-                <Typography sx={{ fontSize: "inherit" }} component="span">
-                  {" "}
-                </Typography>
-
-                <Typography
-                  component={"span"}
-                  sx={{
-                    color: "primary.main",
-                    fontSize: "inherit",
-                    fontWeight: "bold",
-                  }}
-                >
-                  React
-                </Typography>
-                <Typography sx={{ fontSize: "inherit" }} component="span">
-                  {" "}
-                </Typography>
-
-                {/* <Typography component={"span"} sx={{ color: "primary.main", fontSize: "1.25rem", fontWeight: "bold" }}>
-                React
-              </Typography>
-              , pero también he utilizado tecnologías de Backend y de desarrollo de software en Java. */}
-              </Typography>
-              <Typography sx={{ fontSize: "1.25rem", mb: "1rem" }}></Typography>
-              <Typography
-                sx={{ fontSize: "1.25rem", mb: "1rem" }}
-              ></Typography>{" "}
-            </Box>
-
-            <Typography component={"h3"} variant={"h5"} sx={{ mb: "1rem" }}>
-              Languages
-            </Typography>
-            <Box
-              sx={{
-                display: "grid",
-                mb: "1rem",
-                gridTemplateColumns: {
-                  xs: "repeat(2, 1fr)",
-                  sm: "repeat(1, 1fr)",
-                },
-              }}
-            ></Box>
-          </Box>
+          <Button size="large" variant="outlined">
+            BACK TO MAIN PAGE
+          </Button>
         </Box>
       </Container>
     </Box>

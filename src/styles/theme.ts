@@ -13,6 +13,10 @@ export const theme = createTheme({
     h1: {
       // fontSize: "2.9rem",
     },
+    body1: {
+      fontSize: "2rem",
+    },
     htmlFontSize: 10,
+    // fontSize: 18,
   },
 });
