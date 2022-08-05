@@ -11,7 +11,11 @@ import MenuItem from "@mui/material/MenuItem";
 import { SocialMedia } from "../socialMedia/SocialMedia";
 import { LanguageSelector } from "../languageSelector/LanguageSelector";
 
+import { projectData } from "../../data/data";
+import { Link } from "react-router-dom";
+
 const pages = ["Products", "Pricing", "Blog"];
+const portfolioPages = projectData;
 
 export const Appbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -66,10 +70,24 @@ export const Appbar = () => {
                 display: "block",
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+              {/* {pages.map((page) => (
+                <Link>
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page}</Typography>
+                  </MenuItem>
+                </Link>
+              ))} */}
+              {portfolioPages.map((portfolioPage) => (
+                <Link
+                  key={portfolioPage.id}
+                  to={`/project/${portfolioPage.id}`}
+                >
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">
+                      {portfolioPage.title}
+                    </Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>

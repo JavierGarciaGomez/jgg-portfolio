@@ -37,7 +37,6 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Box className="app">
-        <Appbar />
         <AppRouter />
       </Box>
     </ThemeProvider>

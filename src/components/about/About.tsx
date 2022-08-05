@@ -71,8 +71,8 @@ export const About = () => {
             </Box>
           </Box>
           <Box>
-            <Box>
-              <Typography sx={{ fontSize: "1.25rem", mb: "1rem" }}>
+            <Box sx={{ fontSize: { sx: "1.5rem", sm: "body1.fontSize" } }}>
+              <Typography sx={{ mb: "1rem", fontSize: "inherit" }}>
                 <Typography sx={{ fontSize: "inherit" }} component="span">
                   {" "}
                   {t("about.1.1")}
@@ -83,6 +83,7 @@ export const About = () => {
                   sx={{
                     color: "primary.main",
                     fontSize: "inherit",
+
                     fontWeight: "bold",
                   }}
                 >
@@ -98,10 +99,10 @@ export const About = () => {
               </Typography>
               , pero también he utilizado tecnologías de Backend y de desarrollo de software en Java. */}
               </Typography>
-              <Typography sx={{ fontSize: "1.25rem", mb: "1rem" }}>
+              <Typography sx={{ fontSize: "inherit", mb: "1rem" }}>
                 {t("about.2")}
               </Typography>
-              <Typography sx={{ fontSize: "1.25rem", mb: "1rem" }}>
+              <Typography sx={{ fontSize: "inherit", mb: "1rem" }}>
                 {t("about.3")}
               </Typography>{" "}
             </Box>
@@ -129,8 +130,12 @@ export const About = () => {
                     src={`./assets/flags/${lang.id}.png`}
                     sx={{ height: "2rem", width: "3rem" }}
                   ></Box>
-                  <Typography>{t(`about.languages.${lang.id}`)}</Typography>
-                  <Typography>{t(`about.languages.${lang.level}`)}</Typography>
+                  <Typography sx={{ fontSize: "inherit" }}>
+                    {t(`about.languages.${lang.id}`)}
+                  </Typography>
+                  <Typography sx={{ fontSize: "inherit" }}>
+                    {t(`about.languages.${lang.level}`)}
+                  </Typography>
                 </Box>
               ))}
             </Box>
