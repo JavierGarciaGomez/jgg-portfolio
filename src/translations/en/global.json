@@ -1,4 +1,3 @@
-
 {
   "translation": {
     "about": {
@@ -7,7 +6,7 @@
       "1.2": ", but I have also used backend technologies and software development in Java.",
       "2": "I am a Law graduate, but several years ago I changed my career to dedicate myself exclusively to web development.",
       "3": "If you are interested in working with me, you can contact me by email, phone or through any of my social networks.",
-      "languages":{
+      "languages": {
         "es": "Spanish",
         "en": "English",
         "it": "Italian",
@@ -26,22 +25,36 @@
     "common": {
       "view": "View"
     },
-    "contact":{
+    "contact": {
       "heading": "Contact",
       "form": {
         "name": "Name",
-        "email":"Email",
+        "email": "Email",
         "subject": "Subject",
         "message": "Message",
         "send": "Send",
         "success": "Message sent. I will reply as soon as possible"
       }
     },
-    "projects":{
-      "hvpWeb":{
-        "desc": "This is the description"
+    "projects": {
+      "hvpWeb": {
+        "desc": "Semi-static website of the Hospital Veterinario Peninsular, a Mexican company based in the city of Mérida dedicated to the provision of veterinary services. The website has some elements loaded from an API, but it is mostly static."
+      },
+      "hvpDashboard": {
+        "desc": "Internal web application of the  Hospital Veterinario Peninsular, among its main functions, allows the management of some aspects related to human resources, control of cleanliness of the branches, search and registration of tax IDs, control of administrative staff activities, additionally it allows the registration of clients to process pedigrees and carry out other procedures of the Federación Canófila Mexicana. It was used as a final project for the Web Application Development Degree."
+      },
+      "hvpDesktopApp": {
+        "desc": "Desktop application of the Hospital Veterinario Peninsular, among its main functions is the registration of personnel, the scheduling of work days, the appointment schedule, the registration of entries and exits, the handling of incidents, among others. It was used as a final project for the Multiplatform Application Development FP."
+      },
+      "portfolio": {
+        "desc": "It is this website, it is a static site and it contains information about its author, particularly his CV and the list of the projects he has worked on, it is multilingual, allowing the user to select between English and Spanish, it also contains a router for see files on the projects."
+      },
+      "decryptoApp": {
+        "desc": "Web application, made as part of a training exercise when I did my internship at the company Geinfor, it was the first project in Angular that I developed and through an API connection to CoinGecko, it obtains recent information about various cryptocurrencies."
+      },
+      "ginebraSeBana": {
+        "desc": "Web application in development, made for personal purposes, whose purpose is to record pet baths, since one of my dogs has always had skin problems and requires continuous baths. It allows registering new users and linking them to new or existing pets."
       }
     }
-
   }
 }

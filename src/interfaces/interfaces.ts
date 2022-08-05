@@ -34,7 +34,8 @@ export type ISkillsKey =
   | "cypress"
   | "angular"
   | "googleCloud"
-  | "javaFx";
+  | "javaFx"
+  | "angularMaterial";
 
 export type IProjectButton = {
   type: "website" | "github" | "youtube";

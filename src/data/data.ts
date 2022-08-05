@@ -35,6 +35,11 @@ export const skills2: Record<ISkillsKey, ISkill> = {
   angular: { id: "angular", label: "Angular", showMain: true },
   googleCloud: { id: "googleCloud", label: "Google Cloud", showMain: false },
   javaFx: { id: "javaFx", label: "Java Fx", showMain: false },
+  angularMaterial: {
+    id: "angularMaterial",
+    label: "Material",
+    showMain: false,
+  },
 };
 
 // export const buttons = {
@@ -109,6 +114,69 @@ export const projectData: IProjectData[] = [
         type: "youtube",
         url: "https://www.youtube.com/watch?v=lP0gQJTrSuI&feature=youtu.be",
         component: YouTubeIcon,
+      },
+    ],
+  },
+  {
+    id: "portfolio",
+    title: "Portfolio",
+    technologies: [
+      skills2.react,
+      skills2.materialui,
+      skills2.typeScript,
+      skills2.sass,
+    ],
+    buttons: [
+      {
+        type: "website",
+        url: "https://javier-garcia.netlify.app/",
+        component: PageviewIcon,
+      },
+      {
+        type: "github",
+        url: "https://github.com/JavierGarciaGomez/jgg-portfolio",
+        component: GitHubIcon,
+      },
+    ],
+  },
+  {
+    id: "decryptoApp",
+    title: "DecryptoApp",
+    technologies: [skills2.angular, skills2.angularMaterial, skills2.sass],
+    buttons: [
+      {
+        type: "website",
+        url: "https://jgg-decrypto.netlify.app/",
+        component: PageviewIcon,
+      },
+      {
+        type: "github",
+        url: "https://github.com/JavierGarciaGomez/DecryptoApp",
+        component: GitHubIcon,
+      },
+    ],
+  },
+  {
+    id: "ginebraSeBana",
+    title: "Ginebra se baña",
+    technologies: [
+      skills2.angular,
+      skills2.angularMaterial,
+      skills2.sass,
+      skills2.nodeJs,
+      skills2.express,
+      skills2.mongoDB,
+    ],
+    buttons: [
+      {
+        type: "website",
+        url: "https://ginebrasebana.netlify.app/main",
+        component: PageviewIcon,
+      },
+      {
+        type: "github",
+        url: "https://github.com/JavierGarciaGomez/GinebraSeBana",
+        component: GitHubIcon,
       },
     ],
   },

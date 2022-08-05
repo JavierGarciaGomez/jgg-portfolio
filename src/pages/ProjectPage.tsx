@@ -9,7 +9,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { SkillIcon } from "../components/skillIcon/SkillIcon";
 import { useTranslation } from "react-i18next";
 import { projectData } from "../data/data";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export const ProjectPage = () => {
   const { projectId } = useParams();
@@ -164,9 +164,11 @@ export const ProjectPage = () => {
             marginBottom: "5rem",
           }}
         >
-          <Button size="large" variant="outlined">
-            BACK TO MAIN PAGE
-          </Button>
+          <Link to={"/"}>
+            <Button size="large" variant="outlined">
+              BACK TO MAIN PAGE
+            </Button>
+          </Link>
         </Box>
       </Container>
     </Box>
