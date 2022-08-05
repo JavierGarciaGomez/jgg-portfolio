@@ -91,13 +91,14 @@ export const Appbar = () => {
               ))}
             </Menu>
           </Box>
+
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: "flex", flexGrow: 1, padding: "0 2rem" }}
           >
-            JG
+            <Link to="/">JG</Link>
           </Typography>
 
           <SocialMedia />

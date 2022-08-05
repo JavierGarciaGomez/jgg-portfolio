@@ -37,6 +37,14 @@
       }
     },
     "projects": {
+      "commonContent":{
+        "techHeading": "Main technologies",
+        "knowMore": "View more",
+        "descHeading": "Description",
+        "prevProy": "Previous project",
+        "nextProy": "Next project",
+        "backBtn": "Back to main page"
+      },
       "hvpWeb": {
         "desc": "Semi-static website of the Hospital Veterinario Peninsular, a Mexican company based in the city of Mérida dedicated to the provision of veterinary services. The website has some elements loaded from an API, but it is mostly static."
       },

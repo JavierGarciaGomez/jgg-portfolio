@@ -18,6 +18,9 @@ export const ProjectPage = () => {
   // TODO get this
 
   const project = projectData.find((element) => element.id === projectId);
+  const index = projectData.findIndex((element) => element.id === projectId);
+  const prevIndex = index === 0 ? projectData.length - 1 : index - 1;
+  const nextIndex = index + 1 === projectData.length ? 0 : index + 1;
 
   const { t } = useTranslation();
   /* //TODO LIST:
@@ -100,7 +103,7 @@ export const ProjectPage = () => {
               {/* Technologies */}
               <Box>
                 <Typography variant="h5" component="h3" mb="1rem">
-                  Principales tecnologías
+                  {t(`projects.commonContent.techHeading`)}
                 </Typography>
                 <Box
                   sx={{
@@ -118,7 +121,7 @@ export const ProjectPage = () => {
               {/* Buttons */}
               <Box>
                 <Typography variant="h5" component="h3" mb="1rem">
-                  Conozca más
+                  {t(`projects.commonContent.knowMore`)}
                 </Typography>
 
                 <Box
@@ -154,9 +157,28 @@ export const ProjectPage = () => {
             }}
           >
             <Typography variant="h3" component="h3" mb="2rem">
-              Descripción
+              {t(`projects.commonContent.descHeading`)}
             </Typography>
             <Typography>{t(`projects.${project?.id}.desc`)}</Typography>
+          </Box>
+
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-evenly",
+              marginBottom: "2rem",
+            }}
+          >
+            <Link to={`/project/${projectData[prevIndex].id}`}>
+              <Button size="small">
+                {t(`projects.commonContent.prevProy`)}
+              </Button>
+            </Link>
+            <Link to={`/project/${projectData[nextIndex].id}`}>
+              <Button size="small">
+                {t(`projects.commonContent.nextProy`)}
+              </Button>
+            </Link>
           </Box>
 
           <Box
@@ -169,7 +191,7 @@ export const ProjectPage = () => {
           >
             <Link to={"/"}>
               <Button size="large" variant="outlined">
-                BACK TO MAIN PAGE
+                {t(`projects.commonContent.backBtn`)}
               </Button>
             </Link>
           </Box>

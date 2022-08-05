@@ -37,6 +37,14 @@
       }
     },
     "projects": {
+      "commonContent":{
+        "techHeading": "Principales tecnologías",
+        "knowMore": "Conozca más",
+        "descHeading": "Descripción",
+        "prevProy": "Proyecto previo",
+        "nextProy": "Proyecto siguiente",
+        "backBtn": "Regresa a página principal"
+      },
       "hvpWeb": {
         "desc": "Sitio web semiestático del Hospital Veterinario Peninsular, una empresa mexicana con sede en la ciudad de Mérida dedicada a la prestación de servicios veterinarios. El sitio web cuenta con algunos elementos cargados desde una API, pero en su mayoría es estático."
       },
