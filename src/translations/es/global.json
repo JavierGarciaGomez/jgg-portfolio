@@ -6,7 +6,7 @@
       "1.2": ", pero también he utilizado tecnologías de Backend y de desarrollo de software en Java.",
       "2": "Mis estudios universitarios son de Derecho, pero desde hace varios años cambié de carrera para dedicarme exclusivamente al desarrollo.",
       "3": "Si estás interesado en trabajar conmigo, puedes contactarme por correo electrónico, teléfono o por cualquiera de mis redes sociales.",
-      "languages":{
+      "languages": {
         "es": "Español",
         "en": "Inglés",
         "it": "Italiano",
@@ -25,25 +25,35 @@
     "common": {
       "view": "Ver"
     },
-    "contact":{
+    "contact": {
       "heading": "Contacto",
       "form": {
         "name": "Nombre",
-        "email":"Correo electrónico",
+        "email": "Correo electrónico",
         "subject": "Asunto",
         "message": "Mensaje",
         "send": "Enviar",
         "success": "Mensaje eviado. Contestaré a la brevedad."
       }
-    },    "projects":{
-      "hvpWeb":{
+    },
+    "projects": {
+      "hvpWeb": {
         "desc": "Sitio web semiestático del Hospital Veterinario Peninsular, una empresa mexicana con sede en la ciudad de Mérida dedicada a la prestación de servicios veterinarios. El sitio web cuenta con algunos elementos cargados desde una API, pero en su mayoría es estático."
       },
-      "hvpDashboard":{
+      "hvpDashboard": {
         "desc": "Aplicación web interna del Hospital Veterinario Peninsular, entre sus funciones principales permite el manejo de algunos aspectos relacionados con los recursos humanos, el control de limpieza de los locales, búsqueda y registro de cédulas fiscales, control de actividades del personal administrativo, adicionalmente permite el registro de clientes para tramitar pedigrís y realizar otros trámites de la Federación Canófila Mexicana. Fue utilizado como proyecto final para el FP de Desarrollo de Aplicaciones Web."
       },
-      "hvpDesktopApp":{
+      "hvpDesktopApp": {
         "desc": "Aplicación de escritorio del Hospital Veterinario Peninsular, entre sus funciones principales se encuentra el registro del personal, la calendarización de jornadas de trabajo, la agenda de citas, el registro de entradas y salidas, el manejo de incidentes, entre otros. Fue utilizada como proyecto final para el FP de Desarrollo de Aplicaciones Multiplataforma."
+      },
+      "portfolio": {
+        "desc": "Es este sitio web, es un sitio estático y contiene información de su autor, particularmente su CV y el listado de los proyectos en los que ha trabajado, es multiidioma, permitiendo al usuario seleccionar entre inglés y español, de igual forma contiene un enrutador para ver fichas sobre los proyectos."
+      },
+      "decryptoApp": {
+        "desc": "Aplicación web, realizada como parte de un ejercicio de formación cuando realicé mis prácticas en la empresa Geinfor, fue el primer proyecto en Angular que desarrollé y mediante una conexión API a CoinGecko, obtiene información reciente sobre diversas criptomonedas."
+      },
+      "ginebraSeBana": {
+        "desc": "Aplicación web en desarrollo, realizada para fines personales, que tiene por objeto registrar los baños de mascotas, pues una de mis perritas siempre ha tenido problemas de piel y requiere que se le apliquen continuamente. Permite registrar nuevos usuarios y vincularlos a mascotas nuevas o preexistentes."
       }
     }
   }
