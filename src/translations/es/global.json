@@ -61,7 +61,7 @@
         "desc": "Aplicación web, realizada como parte de un ejercicio de formación cuando realicé mis prácticas en la empresa Geinfor, fue el primer proyecto en Angular que desarrollé y mediante una conexión API a CoinGecko, obtiene información reciente sobre diversas criptomonedas."
       },
       "ginebraSeBana": {
-        "desc": "Aplicación web en desarrollo, realizada para fines personales, que tiene por objeto registrar los baños de mascotas, pues una de mis perritas siempre ha tenido problemas de piel y requiere que se le apliquen continuamente. Permite registrar nuevos usuarios y vincularlos a mascotas nuevas o preexistentes."
+        "desc": "Aplicación web, realizada para fines personales, que tiene por objeto registrar los baños de mascotas, pues una de mis perritas siempre ha tenido problemas de piel y requiere que se le apliquen continuamente. Permite registrar nuevos usuarios y vincularlos a mascotas nuevas o preexistentes."
       }
     }
   }

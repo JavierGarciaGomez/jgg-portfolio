@@ -61,7 +61,7 @@
         "desc": "Web application, made as part of a training exercise when I did my internship at the company Geinfor, it was the first project in Angular that I developed and through an API connection to CoinGecko, it obtains recent information about various cryptocurrencies."
       },
       "ginebraSeBana": {
-        "desc": "Web application in development, made for personal purposes, whose purpose is to record pet baths, since one of my dogs has always had skin problems and requires continuous baths. It allows registering new users and linking them to new or existing pets."
+        "desc": "Web application made for personal purposes, whose goal is to record pet baths, since one of my dogs has always had skin problems and requires continuous baths. It allows registering new users and linking them to new or existing pets."
       }
     }
   }

@@ -170,13 +170,18 @@ export const projectData: IProjectData[] = [
     buttons: [
       {
         type: "website",
-        url: "https://ginebrasebana.netlify.app/main",
+        url: "https://ginebrasebana.netlify.app/",
         component: PageviewIcon,
       },
       {
         type: "github",
         url: "https://github.com/JavierGarciaGomez/GinebraSeBana",
         component: GitHubIcon,
+      },
+      {
+        type: "youtube",
+        url: "https://github.com/JavierGarciaGomez/GinebraSeBana",
+        component: YouTubeIcon,
       },
     ],
   },
